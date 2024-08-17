@@ -1,0 +1,53 @@
+/* WhatsInBox Component CSS */
+.whats-in-the-box {
+  text-align: center;
+  margin: 50px 0;
+  background-color: #fafafa;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px 0;
+  height: 480px;
+}
+
+.box-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+.box-item {
+  text-align: center;
+}
+
+.box-item-image {
+  width: 350px;
+  height: 350px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.macbook-image {
+  background-image: url("../images/mba13-inbox.jpeg"); /* Image of the MacBook */
+}
+
+.usb-c-cable-image {
+  background-image: url("../images/mba13-cableinbox.jpeg"); /* Image of the USB-C to MagSafe 3 Cable */
+}
+
+.power-adapter-image {
+  background-image: url("../images/mba13-adapter-witinbox.jpeg"); /* Image of the USB-C Power Adapter */
+}
+
+.whats-in-the-box h2 {
+  font-size: 54px;
+  margin-bottom: 20px;
+}
+
+.box-item p {
+  font-size: 13px;
+  margin-top: 10px;
+}

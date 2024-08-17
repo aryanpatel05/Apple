@@ -1,0 +1,176 @@
+.billing-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1d1d1f;
+  margin-bottom: 20px;
+}
+
+.checkout-button {
+  display: inline-block;
+  background-color: #0071e3;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.checkout-button.centered {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 6px 100px;
+  font-size: 14px;
+}
+
+.checkout-button.right-aligned {
+  float: right;
+  margin-bottom: 0;
+  padding: 13px 100px;
+  font-size: 14px;
+}
+
+.product-summary {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.product-image {
+  width: 160px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.product-details {
+  flex: 2 1;
+  margin-right: 40px;
+  text-align-last: left;
+  margin-top: -25px;
+}
+
+.product-details h3 {
+  font-size: 24px;
+  color: #1d1d1f;
+  font-weight: 600;
+}
+
+.product-details p,
+.product-details .details-link {
+  font-size: 14px;
+  color: #86868b;
+  margin-inline: auto;
+}
+
+.product-details .details-link {
+  color: #0071e3;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.product-pricing {
+  text-align: right;
+}
+
+.product-pricing .price {
+  font-size: 24px;
+  color: #1d1d1f;
+  font-weight: 600;
+}
+
+.product-pricing .installment {
+  font-size: 14px;
+  color: #86868b;
+}
+
+.product-pricing .savings {
+  font-size: 14px;
+  color: #d74b00;
+}
+
+.remove-button {
+  background-color: transparent;
+  color: #0071e3;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.applecare-section {
+  border-top: 1px solid #e0e0e5;
+  padding-top: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #1d1d1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-applecare-button {
+  background-color: transparent;
+  color: #0071e3;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.billing-summary {
+  border-top: 1px solid #e0e0e5;
+  padding-top: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #1d1d1f;
+}
+
+.billing-summary .summary-details,
+.billing-summary .summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.billing-summary .summary-details .summary-label,
+.billing-summary .summary-total .total-label {
+  font-weight: bold;
+}
+
+.billing-summary .summary-total {
+  border-top: 1px solid #e0e0e5;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.billing-summary .total-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.billing-summary .monthly-payment,
+.billing-summary .savings {
+  font-size: 14px;
+  color: #86868b;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.billing-summary .savings {
+  color: #d74b00;
+  font-size: 18px;
+}

@@ -1,0 +1,327 @@
+.mac-section {
+  display: flex;
+  align-items: center;
+  padding: 100px 0 0 0;
+  gap: 50px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-container {
+  margin-right: auto;
+}
+
+.text-container h1 {
+  font-size: 54px;
+  margin: 0;
+}
+
+.image-container {
+  background-image: url("../images/hero__ebxx5f9ked8i_large_2x.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  height: 650px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 400px;
+}
+
+.overlay h2 {
+  font-size: 54px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.watch-film-btn,
+.learn-more-btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.watch-film-btn {
+  background-color: white;
+  color: black;
+}
+
+.learn-more-btn {
+  background-color: #007aff;
+  color: white;
+}
+
+.know-mac-section {
+  padding: 50px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  height: 650px;
+  width: 360px;
+  position: relative;
+}
+
+.card:nth-child(1) {
+  background-image: url("../images/mac_ease.jpg");
+}
+
+.card:nth-child(2) {
+  background-image: url("../images/mac_performance.jpg");
+}
+
+.card:nth-child(3) {
+  background-image: url("../images/mac_iphone.jpg");
+}
+
+.card:nth-child(4) {
+  background-image: url("../images/mac_compatibility.jpg");
+}
+
+.card:nth-child(5) {
+  background-image: url("../images/mac_security.jpg");
+}
+
+.card:nth-child(6) {
+  background-image: url("../images/mac_durability.jpg");
+}
+
+.card:nth-child(7) {
+  background-image: url("../images/mac_values.jpg");
+}
+
+.card-overlay {
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  color: white;
+  text-align: -webkit-left;
+}
+
+.card:nth-child(4) .card-overlay,
+.card:nth-child(3) .card-overlay,
+.card:nth-child(6) .card-overlay,
+.card:nth-child(7) .card-overlay {
+  color: black;
+}
+
+.card-overlay h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-overlay p {
+  margin: 5px 0 0;
+  font-size: 26px;
+  float: left;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.slider-nav button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slider-nav button:disabled {
+  display: none;
+}
+/* Existing CSS */
+
+/* New Section CSS */
+.explore-lineup-section {
+  text-align: center;
+  /* padding: 50px 0; */
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.explore-lineup-section h2 {
+  font-size: 54px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #1d1d1f;
+  text-align: -webkit-left;
+  padding: 40px 0 40px 0;
+}
+
+.categories {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 0 0 40px 0;
+}
+
+.category-btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: 1px solid #d2d2d7;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: white;
+  color: #1d1d1f;
+}
+
+.category-btn.active {
+  background-color: #1d1d1f;
+  color: white;
+}
+
+.models {
+  display: flex;
+
+  gap: 40px;
+  background-color: #f9f9f9;
+}
+
+.model {
+  position: relative;
+  text-align: center;
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f9f9f9;
+  padding: 20px 0;
+}
+
+.model-info {
+  /* padding: 20px; */
+  background: #f9f9f9;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  margin: 250px 0 0 0;
+}
+
+.model-info h3 {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  color: #1d1d1f;
+}
+
+.model-info p {
+  font-size: 17px;
+  margin: 5px 0;
+  color: #1d1d1f;
+  padding: 12px 25px 0;
+}
+
+.model-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.model-learn-more-btn,
+.model-buy-btn {
+  padding: 8px 17px;
+  font-size: 17px;
+  border: 1px solid #007aff;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background-color: #007aff;
+}
+.model-buy-btn {
+  padding: 12px 17px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #007aff; /* Keep the text color */
+  background-color: transparent; /* Make the background transparent */
+  border: none; /* Remove the border */
+}
+
+.compare-all-models {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007aff;
+  font-size: 14px;
+}
+
+.compare-all-models:hover {
+  text-decoration: underline;
+}
+
+.model::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  /* z-index: -1; */
+  background-color: #f9f9f9;
+}
+
+.macbook-air::before {
+  background-image: url("../images/product_tile_mba.png"); /* Use your actual image path */
+}
+
+.macbook-pro::before {
+  background-image: url("../images/product_tile_mbp.png"); /* Use your actual image path */
+}
+
+section.grey {
+  background-color: #f9f9f9;
+}

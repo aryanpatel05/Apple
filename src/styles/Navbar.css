@@ -1,0 +1,121 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 12px;
+  position: fixed;
+  width: 100%;
+  z-index: 2; /* Ensure the navbar is above the dropdown initially */
+}
+
+.navbar-logo .navbar-icon {
+  font-size: 15px; /* Adjust size as needed */
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.navbar-icon {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 50px 0 0 300px;
+  top: 75%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 100vw;
+  box-sizing: border-box;
+  text-align-last: left;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease, z-index 0s ease 0.3s;
+}
+
+.navbar-links li:hover .dropdown-content,
+.navbar-links li:focus-within .dropdown-content {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 3; /* Bring the dropdown above the navbar */
+  transition: opacity 0.3s ease, transform 0.3s ease, z-index 0s; /* No delay on z-index change */
+}
+
+.dropdown-column {
+  margin-right: 20px;
+}
+
+.dropdown-column h4 {
+  margin-top: 0;
+  font-size: 10px;
+  color: gray;
+}
+
+.dropdown-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-column ul li {
+  margin-bottom: 18px;
+  margin-right: 50px;
+  text-align: left;
+}
+
+.dropdown-column ul li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  font-size: 20px; /* Keeping the Shop links as they are */
+}
+
+/* First column bold */
+.dropdown-column:nth-child(1) ul li a {
+  font-weight: bold;
+}
+
+/* First row bold and black */
+.dropdown-column ul li:first-child a {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Quick Links and Shop Special Stores Sections */
+.dropdown-column:nth-child(2) ul li a,
+.dropdown-column:nth-child(3) ul li a {
+  font-size: 13px; /* Change font size to 13px */
+  font-weight: normal; /* Ensure the font is not bold */
+}
+
+/* Reduce padding in 2nd and 3rd columns */
+.dropdown-column:nth-child(2),
+.dropdown-column:nth-child(3) {
+  padding: 0 4px; /* Adjust padding as needed */
+}

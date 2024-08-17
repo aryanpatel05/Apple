@@ -1,0 +1,60 @@
+.color-options {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.color-options span {
+  margin-right: 10px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.color-circles {
+  display: flex;
+  gap: 10px;
+}
+
+.color-circle {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 1px solid #d2d2d7;
+  cursor: pointer;
+  position: relative;
+}
+
+.color-circle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px transparent;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: -1;
+  padding: 2px;
+}
+
+.color-circle.selected::after {
+  box-shadow: 0 0 0 2px blue;
+}
+
+.color-circle.blue {
+  background-color: #002147;
+}
+
+.color-circle.gold {
+  background-color: #f5e1da;
+}
+
+.color-circle.silver {
+  background-color: #e5e5e5;
+}
+
+.color-circle.space-gray {
+  background-color: #606060;
+}
