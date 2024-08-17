@@ -63,6 +63,8 @@ h2 {
   font-size: 24px;
   color: #1d1d1f;
   font-weight: 600;
+  text-align: -webkit-left;
+  margin: 50px 0 0 0;
 }
 
 .product-details p,
@@ -76,6 +78,27 @@ h2 {
   color: #0071e3;
   text-decoration: none;
   margin-top: 5px;
+}
+
+.product-quantity {
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+  margin-bottom: 90px;
+}
+
+.product-quantity label {
+  font-size: 14px;
+  color: #1d1d1f;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.product-quantity select {
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .product-pricing {
@@ -139,38 +162,28 @@ h2 {
   color: #1d1d1f;
 }
 
-.billing-summary .summary-details,
-.billing-summary .summary-total {
+.summary-details {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin-bottom: 10px;
 }
 
-.billing-summary .summary-details .summary-label,
-.billing-summary .summary-total .total-label {
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
   font-weight: bold;
-}
-
-.billing-summary .summary-total {
-  border-top: 1px solid #e0e0e5;
   margin-top: 10px;
-  padding-top: 10px;
 }
 
-.billing-summary .total-value {
-  font-size: 24px;
-  font-weight: bold;
+.monthly-payment {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #1d1d1f;
 }
 
-.billing-summary .monthly-payment,
-.billing-summary .savings {
+.savings {
   font-size: 14px;
-  color: #86868b;
-  margin-top: 10px;
-  text-align: right;
-}
-
-.billing-summary .savings {
   color: #d74b00;
-  font-size: 18px;
+  margin-top: 10px;
 }

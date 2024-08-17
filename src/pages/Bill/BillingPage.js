@@ -13,6 +13,7 @@ function BillingPage() {
 
   const [isProductRemoved, setIsProductRemoved] = useState(false);
   const [isAppleCareAdded, setIsAppleCareAdded] = useState(false);
+  const [quantity, setQuantity] = useState(1); // New state for quantity
 
   useEffect(() => {
     if (location.state) {
@@ -29,8 +30,13 @@ function BillingPage() {
     setIsAppleCareAdded((prev) => !prev);
   };
 
+  const handleQuantityChange = (event) => {
+    setQuantity(parseInt(event.target.value, 10));
+  };
+
   const appleCarePrice = 19900;
-  const subtotal = isAppleCareAdded ? totalPrice + appleCarePrice : totalPrice;
+  const subtotal =
+    (isAppleCareAdded ? totalPrice + appleCarePrice : totalPrice) * quantity;
   const shipping = 0;
   const total = subtotal + shipping;
 
@@ -62,12 +68,26 @@ function BillingPage() {
                   Show product details
                 </a>
               </div>
+              <div className="product-quantity">
+                <label htmlFor="quantity">Qty:</label>
+                <select
+                  id="quantity"
+                  value={quantity}
+                  onChange={handleQuantityChange}
+                >
+                  {[...Array(10).keys()].map((num) => (
+                    <option key={num + 1} value={num + 1}>
+                      {num + 1}
+                    </option>
+                  ))}
+                </select>
+              </div>
               <div className="product-pricing">
                 <p className="price">
-                  ₹{totalPrice?.toLocaleString("en-IN")}.00
+                  ₹{(totalPrice * quantity)?.toLocaleString("en-IN")}.00
                 </p>
                 <p className="installment">
-                  ₹{monthlyPrice?.toLocaleString("en-IN")}/mo.
+                  ₹{(monthlyPrice * quantity)?.toLocaleString("en-IN")}/mo.
                 </p>
                 <p className="savings">
                   Get up to ₹12814.00 savings with eligible card(s)^
@@ -99,6 +119,7 @@ function BillingPage() {
                 <p className="summary-label">Shipping</p>
                 <p className="summary-value">FREE</p>
               </div>
+              <hr className="divider-line" />
               <div className="summary-total">
                 <p className="total-label">Total</p>
                 <p className="total-value">
@@ -106,7 +127,8 @@ function BillingPage() {
                 </p>
               </div>
               <p className="monthly-payment">
-                ₹{monthlyPrice?.toLocaleString("en-IN")}/mo. with EMI
+                ₹{(monthlyPrice * quantity)?.toLocaleString("en-IN")}/mo. with
+                EMI
               </p>
               <p className="savings">
                 Total savings of ₹12814.00 with eligible card(s)^
